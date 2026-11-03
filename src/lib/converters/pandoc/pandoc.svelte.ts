@@ -3,7 +3,7 @@ import { VertFile, type WorkerMessage } from "#lib/types";
 import { ToastManager } from "#lib/util/toast.svelte";
 import PandocWorker from "#lib/workers/pandoc?worker&url";
 import { browser } from "$app/env";
-import pandocWasm from "pandoc-wasm/wasm?url";
+import { PANDOC_WASM } from "#lib/util/wasm-cdn";
 import { Converter, FormatInfo, formatDuration } from "../converter.svelte";
 
 export class PandocConverter extends Converter {
@@ -25,7 +25,7 @@ export class PandocConverter extends Converter {
 	protected async download(): Promise<void> {
 		if (!browser) return;
 		try {
-			this.wasm = await fetch(pandocWasm).then((r) => r.arrayBuffer());
+			this.wasm = await fetch(PANDOC_WASM).then((r) => r.arrayBuffer());
 
 			this.status = "ready";
 			return Promise.resolve();

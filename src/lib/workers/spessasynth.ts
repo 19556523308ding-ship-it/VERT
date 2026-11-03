@@ -1,7 +1,6 @@
 import type { WorkerMessage } from "#lib/types";
 import { formatError } from "#lib/util/error";
-import ffmpegWasmURL from "@ffmpeg/core/wasm?url";
-import ffmpegCoreURL from "@ffmpeg/core?url";
+import { FFMPEG_CORE_JS, FFMPEG_CORE_WASM } from "#lib/util/wasm-cdn";
 import { FFmpeg } from "@ffmpeg/ffmpeg";
 import {
 	BasicMIDI,
@@ -14,8 +13,8 @@ SpessaLog.setLogLevel(false, false, false);
 
 self.postMessage({ type: "ready", id: "0" });
 
-const coreURL = new URL(ffmpegCoreURL, import.meta.url).href;
-const wasmURL = new URL(ffmpegWasmURL, import.meta.url).href;
+const coreURL = FFMPEG_CORE_JS;
+const wasmURL = FFMPEG_CORE_WASM;
 
 const isMIDI = (ext: string) => [".mid", ".midi", ".rmi", ".kar"].includes(ext);
 const isBank = (ext: string) =>

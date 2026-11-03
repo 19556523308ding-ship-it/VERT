@@ -78,6 +78,12 @@
 	};
 
 	onMount(() => {
+		// this mirror defaults to Simplified Chinese on first visit; the
+		// language can be changed in Settings and is remembered afterwards
+		if (!localStorage.getItem("locale")) updateLocale("zh-Hans");
+	});
+
+	onMount(() => {
 		// captures console output for debugging page
 		installConsoleCapture();
 

@@ -49,4 +49,10 @@ export const variables = defineEnvVars({
 		description:
 			"Stripe donation settings. Please keep these values the same, they support VERT's development!",
 	},
+	PUB_WASM_CDN: {
+		public: true,
+		static: true,
+		description:
+			"Base URL hosting the large WebAssembly binaries (ffmpeg cores, pandoc) that exceed the static host's per-file size limit.",
+	},
 });

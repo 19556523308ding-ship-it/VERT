@@ -2,21 +2,23 @@ import { m } from "#lib/paraglide/messages";
 import type { VertFile } from "#lib/types";
 import { ToastManager } from "#lib/util/toast.svelte";
 import { browser } from "$app/env";
-import ffmpegMtWasmURL from "@ffmpeg/core-mt/wasm?url";
 import ffmpegMtWorkerRaw from "@ffmpeg/core-mt/worker?raw";
-import ffmpegMtCoreURL from "@ffmpeg/core-mt?url";
-import ffmpegWasmURL from "@ffmpeg/core/wasm?url";
-import ffmpegCoreURL from "@ffmpeg/core?url";
+import {
+	FFMPEG_CORE_JS,
+	FFMPEG_CORE_WASM,
+	FFMPEG_MT_CORE_JS,
+	FFMPEG_MT_CORE_WASM,
+} from "#lib/util/wasm-cdn";
 import { FFmpeg } from "@ffmpeg/ffmpeg";
 import { SvelteMap } from "svelte/reactivity";
 import { Converter } from "../converter.svelte";
 import { EngineVariants, type FFmpegVariant } from "../engine-variants.svelte";
 import { probeDecodableAudioCodecs } from "./ffmpeg.decoders";
 
-const coreURL = new URL(ffmpegCoreURL, import.meta.url).href;
-const wasmURL = new URL(ffmpegWasmURL, import.meta.url).href;
-const mtCoreURL = new URL(ffmpegMtCoreURL, import.meta.url).href;
-const mtWasmURL = new URL(ffmpegMtWasmURL, import.meta.url).href;
+const coreURL = FFMPEG_CORE_JS;
+const wasmURL = FFMPEG_CORE_WASM;
+const mtCoreURL = FFMPEG_MT_CORE_JS;
+const mtWasmURL = FFMPEG_MT_CORE_WASM;
 
 // The pthread worker ffmpeg-core-mt spawns is a *classic* worker, but the ESM
 // worker file only runs as a module and Vite injects an import into it in dev,

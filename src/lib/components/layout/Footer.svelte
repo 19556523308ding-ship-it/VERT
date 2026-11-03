@@ -33,15 +33,6 @@
 			{m["footer.source_code"]()}
 		</a>
 		<p>•</p>
-		<a
-			class="font-normal hover:underline"
-			href={DISCORD_URL}
-			target="_blank"
-			rel="external"
-		>
-			{m["footer.discord_server"]()}
-		</a>
-		<p>•</p>
 		<a class="font-normal hover:underline" href={resolve("/privacy")}>
 			{m["footer.privacy_policy"]()}
 		</a>
