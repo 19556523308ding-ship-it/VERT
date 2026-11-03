@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PNG 转 JPG - 在线免费转换 | 文件转换工具箱</title>
+<meta name="description" content="免费在线 PNG 转 JPG 工具，照片分享体积更小、兼容性更好，支持本地浏览器转换，无需上传服务器。">
+<style>
+  :root {
+    --text: #1f2937;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --bg: #f9fafb;
+    --card: #ffffff;
+    --border: #e5e7eb;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--bg);
+    padding: 20px;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px 28px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 14px;
+    color: #111827;
+  }
+  p { margin-bottom: 14px; }
+  .intro { font-size: 15px; color: #374151; }
+  .cta { margin: 22px 0 26px; }
+  .cta a {
+    display: inline-block;
+    background: var(--accent);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 26px;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: background .2s ease, transform .1s ease;
+  }
+  .cta a:hover { background: var(--accent-hover); transform: translateY(-1px); }
+  h2 { font-size: 20px; font-weight: 700; margin: 28px 0 14px; color: #111827; }
+  h3 { font-size: 16px; font-weight: 700; margin: 22px 0 10px; }
+  ol { margin-left: 20px; }
+  ol li { margin-bottom: 10px; }
+  ul { margin-left: 20px; margin-top: 6px; }
+  ul li { margin-bottom: 6px; }
+  .why-card {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .why-card strong { color: #1e40af; }
+  .faq-item { border-bottom: 1px solid var(--border); padding: 16px 0; }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-q { font-weight: 700; font-size: 15px; margin-bottom: 6px; color: #111827; }
+  .faq-a { font-size: 14px; color: #374151; }
+  .related a {
+    display: inline-block;
+    margin-right: 18px;
+    margin-bottom: 10px;
+    padding: 8px 14px;
+    background: #f3f4f6;
+    color: var(--accent);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background .2s ease;
+  }
+  .related a:hover { background: #e5e7eb; }
+  footer {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    main { padding: 22px 18px; }
+    h1 { font-size: 24px; }
+    h2 { font-size: 18px; }
+    .cta a { padding: 12px 22px; font-size: 15px; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "PNG 转 JPG 后透明背景会变成什么样？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JPG 格式不支持透明通道，所以 PNG 的透明背景会转换为白色底。如需保留透明背景，请改用 PNG、WebP（可保留透明）或 GIF 格式。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PNG 转 JPG 会损失画质吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JPG 采用有损压缩，转换时会在体积和画质之间做折中。一般设置下肉眼难以察觉明显差异，适合照片分享与网页使用；重要原图建议同时保留 PNG 版本。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "转换过程安全吗？文件会被上传到服务器吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "安全。本工具在浏览器本地完成转换，图片不会上传到任何服务器，您的文件隐私完全由自己掌控。首次访问需要下载轻量转换引擎，之后即可秒开使用。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main>
+  <h1>PNG 转 JPG</h1>
+  <p class="intro">
+    PNG 转 JPG 是最常用的图片格式转换之一。PNG 采用无损压缩并支持透明背景，适合图标、截图和设计稿保存；JPG 则通过有损压缩把体积压得更小，被微信、微博等社交平台普遍支持。把 PNG 转成 JPG，照片分享更省流量、加载更快，还能避免某些只认 JPG 的平台拒绝上传图片。本工具在浏览器本地完成转换，无需上传服务器。
+  </p>
+
+  <p class="cta">
+    <a href="https://convert.getpicforge.com/convert" rel="noopener noreferrer">开始转换 →</a>
+  </p>
+
+  <h2>三步完成转换</h2>
+  <ol>
+    <li>点击「开始转换 →」按钮，打开文件选择器。</li>
+    <li>选中一张或多张 PNG 图片，支持批量选择。</li>
+    <li>等待转换完成，下载生成的 JPG 图片即可。</li>
+  </ol>
+
+  <h2>为什么用本地转换</h2>
+  <div class="why-card">
+    <p>
+      <strong>文件不上传服务器</strong>，整张图片都在您的浏览器里完成编码，隐私更有保障；<strong>免费不限次</strong>，随时想转就转；<strong>首次需下载转换引擎</strong>，之后即可秒开，无需等待。
+    </p>
+  </div>
+
+  <h2>PNG 转 JPG 适合什么场景</h2>
+  <p>
+    日常拍的照片、截图和扫描文档，用 PNG 保存往往体积偏大。比如一张 1200×1800 的截图，PNG 可能达到 3MB 以上，而转成 JPG 后常常只有几百 KB。换成 JPG 后，上传到微信群、朋友圈或论坛会更省流量，对方打开也更快。
+  </p>
+  <p>
+    不过 JPG 不支持透明背景，也不适合保存线条锐利的图标或需要反复编辑的设计稿——每保存一次都会叠加一次压缩损失。像 Logo、UI 截图这类图像，建议保留 PNG 原文件，仅把用于发布的副本转成 JPG。
+  </p>
+
+  <h2>常见问题（FAQ）</h2>
+
+  <div class="faq-item">
+    <div class="faq-q">PNG 转 JPG 后透明背景会变成什么样？</div>
+    <div class="faq-a">JPG 格式不支持透明通道，所以 PNG 的透明背景会转换为白色底。如需保留透明背景，请改用 PNG、WebP（可保留透明）或 GIF 格式。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">PNG 转 JPG 会损失画质吗？</div>
+    <div class="faq-a">JPG 采用有损压缩，转换时会在体积和画质之间做折中。一般设置下肉眼难以察觉明显差异，适合照片分享与网页使用；重要原图建议同时保留 PNG 版本。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">转换过程安全吗？文件会被上传到服务器吗？</div>
+    <div class="faq-a">安全。本工具在浏览器本地完成转换，图片不会上传到任何服务器，您的文件隐私完全由自己掌控。首次访问需要下载轻量转换引擎，之后即可秒开使用。</div>
+  </div>
+
+  <h2>相关转换</h2>
+  <div class="related">
+    <a href="../jpg-to-png/">JPG 转 PNG</a>
+    <a href="../png-to-webp/">PNG 转 WebP</a>
+    <a href="../webp-to-png/">WebP 转 PNG</a>
+  </div>
+
+  <footer>
+    本工具基于开源项目 VERT 构建 · 文件在本地浏览器中转换，不上传服务器
+  </footer>
+</main>
+</body>
+</html>

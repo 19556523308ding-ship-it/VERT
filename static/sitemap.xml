@@ -5,28 +5,59 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>https://vert.sh/</loc>
-    <lastmod>2025-10-17T19:23:05+00:00</lastmod>
+    <loc>https://convert.getpicforge.com/</loc>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://vert.sh/convert/</loc>
-    <lastmod>2025-10-17T19:23:05+00:00</lastmod>
+    <loc>https://convert.getpicforge.com/convert/</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://convert.getpicforge.com/wav-to-mp3/</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vert.sh/settings/</loc>
-    <lastmod>2025-10-17T19:23:05+00:00</lastmod>
+    <loc>https://convert.getpicforge.com/mp3-to-wav/</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vert.sh/about/</loc>
-    <lastmod>2025-10-17T19:23:05+00:00</lastmod>
+    <loc>https://convert.getpicforge.com/flac-to-mp3/</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://vert.sh/privacy/</loc>
-    <lastmod>2025-10-17T19:23:05+00:00</lastmod>
+    <loc>https://convert.getpicforge.com/m4a-to-mp3/</loc>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://convert.getpicforge.com/ogg-to-mp3/</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://convert.getpicforge.com/png-to-webp/</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://convert.getpicforge.com/jpg-to-png/</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://convert.getpicforge.com/png-to-jpg/</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://convert.getpicforge.com/webp-to-png/</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://convert.getpicforge.com/md-to-docx/</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://convert.getpicforge.com/about/</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://convert.getpicforge.com/privacy/</loc>
+    <priority>0.30</priority>
   </url>
 </urlset>

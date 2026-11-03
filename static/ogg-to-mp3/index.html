@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OGG 转 MP3 - 在线免费转换 | 文件转换工具箱</title>
+<meta name="description" content="免费在线 OGG 转 MP3 转换器，无需安装软件，在浏览器本地快速将 OGG 音频转为 MP3，适合游戏音频、开源项目音频转通用格式。">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; line-height: 1.8; color: #333; background: #f7f9fc; padding: 20px; }
+main { max-width: 760px; margin: 0 auto; background: #fff; padding: 40px 30px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+h1 { font-size: 32px; color: #1a1a1a; margin-bottom: 20px; text-align: center; }
+h2 { font-size: 20px; color: #1a1a1a; margin: 32px 0 14px; border-left: 4px solid #2f6feb; padding-left: 12px; }
+p { margin-bottom: 16px; font-size: 16px; }
+.intro { background: #eef4fe; border-radius: 8px; padding: 16px 20px; border-left: 4px solid #2f6feb; margin-bottom: 30px; font-size: 15px; color: #222; }
+.cta { text-align: center; margin: 30px 0; }
+.cta a { display: inline-block; background: #2f6feb; color: #fff; font-size: 19px; font-weight: 600; padding: 16px 40px; border-radius: 50px; text-decoration: none; transition: background 0.25s, transform 0.2s; box-shadow: 0 4px 16px rgba(47,111,235,0.35); }
+.cta a:hover { background: #1d55d8; transform: translateY(-2px); }
+ol.steps { margin: 20px 0; padding-left: 24px; font-size: 16px; }
+ol.steps li { margin-bottom: 14px; }
+.steps li strong { color: #1a1a1a; }
+.features li { margin-bottom: 10px; list-style: none; padding-left: 24px; position: relative; }
+.features li::before { content: "✓"; position: absolute; left: 0; color: #2f6feb; font-weight: bold; }
+.faq { margin-top: 20px; }
+.faq-item { margin-bottom: 16px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+.faq-q { background: #f4f7fb; padding: 14px 18px; font-weight: 600; color: #1a1a1a; cursor: default; }
+.faq-a { padding: 14px 18px; font-size: 15px; color: #444; }
+.related { margin: 30px 0 20px; }
+.related h3 { font-size: 16px; color: #666; margin-bottom: 12px; }
+.related ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; }
+.related a { display: block; background: #f1f5f9; color: #2f6feb; text-align: center; padding: 11px 16px; border-radius: 8px; text-decoration: none; font-weight: 500; transition: background 0.2s, color 0.2s; }
+.related a:hover { background: #e2e8f0; color: #1d55d8; }
+footer { margin-top: 36px; padding-top: 20px; border-top: 1px solid #e5e9ef; font-size: 13px; color: #8a94a0; text-align: center; line-height: 1.6; }
+@media (max-width: 640px) {
+  main { padding: 26px 18px; }
+  h1 { font-size: 24px; }
+  .cta a { font-size: 16px; padding: 14px 30px; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "OGG 格式和 MP3 格式有什么区别？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OGG（.ogg）是一种采用 Vorbis 编解码的开源音频格式，音质在同等码率下通常优于 MP3，被许多游戏和开源软件用作背景音乐与音效。MP3（.mp3）则是有损压缩的通用音频格式，兼容性极强，几乎所有播放器、车载音响和移动设备都能直接播放。将 OGG 转为 MP3，可以让音频脱离特定环境，在任何设备上流畅播放。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "转换后的 MP3 音质会损失吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MP3 本身就是有损压缩格式，转换时会根据设定的码率重新编码，音质会有轻微变化。建议输出码率选择 192kbps 或 320kbps，人耳几乎无法察觉差异，可保证音乐、游戏音效的听感基本不变。本工具默认使用高质量 320kbps 编码。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "OGG 转 MP3 安全吗？文件会上传到服务器吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "安全。本工具在浏览器本地完成全部转换，首次需要下载一次转换引擎（约几 MB），之后所有 OGG 文件都在你的浏览器中处理，不会上传到任何服务器，也不留任何记录。转换速度取决于你的电脑性能，无需等待上传下载，隐私更有保障。"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<main>
+<h1>OGG 转 MP3</h1>
+
+<p class="intro">OGG 与 MP3 是两种常用的音频格式。OGG（.ogg）采用开源的 Vorbis 编码，在相同文件大小下音质往往优于 MP3，因此被大量游戏、开源软件和独立作品选作背景音乐和音效格式；而 MP3（.mp3）是最普及的有损音频格式，几乎任何手机、电脑、车载音响和音乐播放器都能直接播放。当你的 OGG 音频无法在目标设备上是播放时，将其转换为 MP3 即可轻松获得通用兼容性。</p>
+
+<div class="cta">
+<a href="https://convert.getpicforge.com/convert" rel="nofollow">开始转换 →</a>
+</div>
+
+<h2>三步完成转换</h2>
+<ol class="steps">
+<li><strong>上传文件</strong>：点击「开始转换」，选择电脑或手机里的 OGG 音频文件（游戏原声、开源项目音效、配音等均可）。</li>
+<li><strong>自动转换</strong>：引擎会读取 OGG 的 Vorbis 编码并重新编码为 MP3，默认输出 320kbps 高码率，也可按需求调整。</li>
+<li><strong>下载 MP3</strong>：转换完成后立即下载 MP3 文件，即可导入音乐播放器、剪辑软件，或直接用于发布分享。</li>
+</ol>
+
+<h2>为什么用本地转换</h2>
+<ul class="features">
+<li><strong>文件不上传</strong>：OGG 音频全程留在你的设备里，不经过任何远程服务器，隐私安全。</li>
+<li><strong>浏览器本地完成</strong>：利用 WebAssembly 技术在浏览器内完成编解码，无需安装任何软件。</li>
+<li><strong>首次需下载转换引擎之后秒开</strong>：只需首次加载几 MB 的转换引擎，后续每次打开页面即开即用，几乎没有等待时间。</li>
+<li><strong>免费不限次</strong>：不限文件大小、不限转换次数，游戏音效批量处理也毫无压力。</li>
+</ul>
+
+<p>对游戏开发者和开源项目维护者而言，这个转换尤为实用：游戏打包时常用 OGG 节省体积，但导出视频、上传演示音频或分享给测试人员时，MP3 的兼容性更省心。无论是提取游戏背景音乐、转换独立游戏的音效素材，还是把开源软件的音频资源适配到通用流程，OGG 转 MP3 都能一步到位，让你从格式兼容的困扰中解脱出来。</p>
+
+<h2>常见问题 FAQ</h2>
+<div class="faq">
+<div class="faq-item">
+<div class="faq-q">OGG 格式和 MP3 格式有什么区别？</div>
+<div class="faq-a">OGG（.ogg）是一种采用 Vorbis 编解码的开源音频格式，音质在同等码率下通常优于 MP3，被许多游戏和开源软件用作背景音乐与音效。MP3（.mp3）则是有损压缩的通用音频格式，兼容性极强，几乎所有播放器、车载音响和移动设备都能直接播放。将 OGG 转为 MP3，可以让音频脱离特定环境，在任何设备上流畅播放。</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">转换后的 MP3 音质会损失吗？</div>
+<div class="faq-a">MP3 本身就是有损压缩格式，转换时会根据设定的码率重新编码，音质会有轻微变化。建议输出码率选择 192kbps 或 320kbps，人耳几乎无法察觉差异，可保证音乐、游戏音效的听感基本不变。本工具默认使用高质量 320kbps 编码。</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">OGG 转 MP3 安全吗？文件会上传到服务器吗？</div>
+<div class="faq-a">安全。本工具在浏览器本地完成全部转换，首次需要下载一次转换引擎（约几 MB），之后所有 OGG 文件都在你的浏览器中处理，不会上传到任何服务器，也不留任何记录。转换速度取决于你的电脑性能，无需等待上传下载，隐私更有保障。</div>
+</div>
+</div>
+
+<div class="related">
+<h3>相关转换</h3>
+<ul>
+<li><a href="../wav-to-mp3/">WAV 转 MP3</a></li>
+<li><a href="../m4a-to-mp3/">M4A 转 MP3</a></li>
+<li><a href="../flac-to-mp3/">FLAC 转 MP3</a></li>
+</ul>
+</div>
+
+<footer>
+本工具基于开源项目 VERT 构建 · 文件在本地浏览器中转换，不上传服务器
+</footer>
+</main>
+</body>
+</html>

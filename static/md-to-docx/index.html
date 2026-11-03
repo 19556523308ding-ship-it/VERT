@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown 转 Word - 在线免费转换 | 文件转换工具箱</title>
+  <meta name="description" content="在线免费 Markdown 转 Word 转换器，支持标题、列表、代码块等常见 Markdown 语法一键生成 Word 文档，文件在浏览器本地完成转换，无需上传，永久免费不限次。">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --bg: #ffffff;
+      --code-bg: #f3f4f6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: #f9fafb;
+      padding: 20px;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px 28px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #111827;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 32px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+    p { margin-bottom: 16px; }
+    .intro { color: #374151; }
+    .cta { margin: 28px 0; }
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-size: 17px;
+      font-weight: 600;
+      padding: 14px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s;
+      text-align: center;
+    }
+    .btn:hover { background: var(--primary-dark); }
+    ol { margin-left: 20px; margin-bottom: 20px; }
+    li { margin-bottom: 10px; }
+    .feature-list li {
+      padding-left: 6px;
+    }
+    .card {
+      background: var(--code-bg);
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin: 20px 0;
+      font-size: 15px;
+    }
+    .faq-item { margin-bottom: 22px; }
+    .faq-q {
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 6px;
+    }
+    .faq-a { color: #4b5563; }
+    .related {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .related a {
+      color: var(--primary);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .related a:hover { background: #eff6ff; border-color: var(--primary); }
+    footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    @media (max-width: 600px) {
+      main { padding: 22px 18px; }
+      h1 { font-size: 24px; }
+      h2 { font-size: 18px; }
+      .btn { padding: 12px 24px; font-size: 16px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Markdown 转 Word 支持哪些语法？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "本工具支持 Markdown 中最常用的语法，包括标题（H1–H6）、无序和有序列表、加粗/斜体/删除线、引用块、代码块与高亮、行内代码、链接、表格，以及分割线等。复杂的数学公式或自定义扩展语法暂时不支持。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "转换后的 Word 文件安全吗？会上传到服务器吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "完全安全。本工具基于开源项目 VERT，所有转换都在您的浏览器本地完成，Markdown 源文件和最终生成的 .docx 文件都不会上传到任何服务器，您的内容不会被任何人查看或保存。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Markdown 转 Word 第一次使用为什么需要等待？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "首次点击转换时会从本地加载并下载转换引擎组件（体积仅几百 KB），这是一次性操作。之后所有转换都会在浏览器中瞬间完成，后续使用秒开，无需等待。"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Markdown 转 Word</h1>
+
+    <p class="intro">Markdown 是一种轻量级标记语言，用纯文本写笔记、文档和说明极其高效——一个 <code>#</code> 就是标题，<code>-</code> 就是列表，但它的 .md 文件在 Microsoft Word、WPS、企业 OA 或打印装订场景中常常「打不开、排不好、同事没法编辑」。Markdown 转 Word 工具就是把你的 <code>.md</code> 笔记一键渲染成规范的 <strong>.docx</strong> 文档：标题、列表、表格、代码块等常见 Markdown 语法都会保留并自动套用 Word 样式，交付给用 Word 的同事、导师或客户时，不用再手动复制粘贴调格式。</p>
+
+    <div class="cta">
+      <a href="https://convert.getpicforge.com/convert" class="btn">开始转换 →</a>
+    </div>
+
+    <h2>三步完成转换</h2>
+    <ol>
+      <li><strong>粘贴或上传 Markdown</strong>：把 <code>.md</code> 文件内容粘贴进输入框，或直接拖入文件。</li>
+      <li><strong>点击转换</strong>：引擎在浏览器本地解析 Markdown，生成标准 <code>.docx</code> 文档。</li>
+      <li><strong>下载 Word 文件</strong>：在「转换结果」区域点击下载即可，文件完全在本地完成，无需等待上传。</li>
+    </ol>
+
+    <div class="card">
+      <strong>格式对照：</strong> Markdown 里 <code># 标题</code> 会映射为 Word 的「标题 1」样式，<code>- 列表项</code> 生成自动编号/项目符号，<code>| 表格 |</code> 变成可编辑的 Word 表格，<code>```代码```</code> 块则套用等宽字体并带灰色底纹——整体排版一气呵成。
+    </div>
+
+    <h2>为什么用本地转换？</h2>
+    <p>Markdown 文档常包含私有笔记、未公开的技术方案或内部规范，上传到第三方服务器意味着内容彻底脱离你的控制，存在泄露和滥用的风险。本工具的所有转换都在浏览器本地完成，文件不上传、不存储、不留痕。首次使用需下载转换引擎（体积仅几百 KB，一次性操作），之后秒开、免费不限次，批量转换也不排队。</p>
+
+    <h2>常见问题</h2>
+    <div class="faq-item">
+      <div class="faq-q">Q：Markdown 转 Word 支持哪些语法？</div>
+      <div class="faq-a">A：支持标题（H1–H6）、无序和有序列表、加粗/斜体/删除线、引用块、代码块与高亮、行内代码、链接、表格以及分割线等常用语法。复杂的数学公式或平台专属扩展语法暂不支持。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q：转换后的 Word 文件安全吗？会上传到服务器吗？</div>
+      <div class="faq-a">A：完全安全。本工具基于开源项目 VERT，所有转换都在您的浏览器本地完成，<code>.md</code> 源文件和最终生成的 <code>.docx</code> 都不会上传到任何服务器，内容不会被任何人查看或保存。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q：第一次使用为什么需要等待？</div>
+      <div class="faq-a">A：首次点击转换时会加载并下载转换引擎组件，这是唯一的一次性操作。之后所有转换都在浏览器中瞬间完成，后续使用秒开、永久免费且不限次数。</div>
+    </div>
+
+    <h2>相关转换</h2>
+    <div class="related">
+      <a href="../wav-to-mp3/">WAV 转 MP3</a>
+      <a href="../png-to-webp/">PNG 转 WebP</a>
+      <a href="../jpg-to-png/">JPG 转 PNG</a>
+      <a href="../">全部转换工具</a>
+    </div>
+
+    <footer>本工具基于开源项目 VERT 构建 · 文件在本地浏览器中转换，不上传服务器</footer>
+  </main>
+</body>
+</html>
